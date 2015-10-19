@@ -3,12 +3,20 @@ class Mission
 {
 	addOns[]=
 	{
+		"a3_map_altis",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"ryanzombies",
+		"A3_Data_F_Curator_Virtual",
 		"A3_Characters_F_BLUFOR",
-		"a3_characters_f",
-		"a3_map_altis"
+		"a3_characters_f"
 	};
 	addOnsAuto[]=
 	{
+		"A3_Data_F_Curator_Virtual",
+		"3DEN",
+		"a3_modules_f_curator_curator",
+		"ryanzombies",
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
 		"a3_map_altis"
@@ -34,8 +42,374 @@ class Mission
 	};
 	class Groups
 	{
-		items=1;
+		items=17;
 		class Item0
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14854.245,17.91,16759.576};
+					id=0;
+					side="LOGIC";
+					vehicle="VirtualCurator_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="zeus_1";
+					syncId=0;
+					synchronizations[]={15};
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14781.112,17.91,16656.184};
+					id=1;
+					side="LOGIC";
+					vehicle="VirtualCurator_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="zeus_2";
+					syncId=1;
+					synchronizations[]={2};
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14760.622,17.91,16662.789};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="zeus_2";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=2;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=2;
+					synchronizations[]={8,7,6,5,4,3,1};
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14698.206,17.91,16652.867};
+					id=3;
+					side="LOGIC";
+					vehicle="Ryanzombieslogichard";
+					leader=1;
+					skill=0.60000002;
+					syncId=3;
+					synchronizations[]={2};
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14699.385,17.91,16672.715};
+					id=4;
+					side="LOGIC";
+					vehicle="Ryanzombieslogicroam";
+					leader=1;
+					skill=0.60000002;
+					syncId=4;
+					synchronizations[]={2};
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14701.896,17.91,16684.303};
+					id=5;
+					side="LOGIC";
+					vehicle="Ryanzombieslogicroamdemon";
+					leader=1;
+					skill=0.60000002;
+					syncId=5;
+					synchronizations[]={2};
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14709.041,17.91,16695.891};
+					id=6;
+					side="LOGIC";
+					vehicle="ryanzombieswaypointdemon";
+					leader=1;
+					skill=0.60000002;
+					syncId=6;
+					synchronizations[]={2};
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14717.924,17.91,16703.807};
+					id=7;
+					side="LOGIC";
+					vehicle="ryanzombieswaypoint";
+					leader=1;
+					skill=0.60000002;
+					syncId=7;
+					synchronizations[]={2};
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14735.304,17.91,16710.951};
+					id=8;
+					side="LOGIC";
+					vehicle="ryanzombiescivilianattacks";
+					leader=1;
+					skill=0.60000002;
+					syncId=8;
+					synchronizations[]={2};
+				};
+			};
+		};
+		class Item9
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14771.339,17.91,16756.26};
+					id=9;
+					side="LOGIC";
+					vehicle="Ryanzombieslogichard";
+					leader=1;
+					skill=0.60000002;
+					syncId=9;
+					synchronizations[]={15};
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14772.518,17.91,16776.107};
+					id=10;
+					side="LOGIC";
+					vehicle="Ryanzombieslogicroam";
+					leader=1;
+					skill=0.60000002;
+					syncId=10;
+					synchronizations[]={15};
+				};
+			};
+		};
+		class Item11
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14775.028,17.91,16787.695};
+					id=11;
+					side="LOGIC";
+					vehicle="Ryanzombieslogicroamdemon";
+					leader=1;
+					skill=0.60000002;
+					syncId=11;
+					synchronizations[]={15};
+				};
+			};
+		};
+		class Item12
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14782.174,17.91,16799.283};
+					id=12;
+					side="LOGIC";
+					vehicle="ryanzombieswaypointdemon";
+					leader=1;
+					skill=0.60000002;
+					syncId=12;
+					synchronizations[]={15};
+				};
+			};
+		};
+		class Item13
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14791.057,17.91,16807.199};
+					id=13;
+					side="LOGIC";
+					vehicle="ryanzombieswaypoint";
+					leader=1;
+					skill=0.60000002;
+					syncId=13;
+					synchronizations[]={15};
+				};
+			};
+		};
+		class Item14
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14808.437,17.91,16814.344};
+					id=14;
+					side="LOGIC";
+					vehicle="ryanzombiescivilianattacks";
+					leader=1;
+					skill=0.60000002;
+					syncId=14;
+					synchronizations[]={15};
+				};
+			};
+		};
+		class Item15
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14833.755,17.91,16766.182};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="zeus_1";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=15;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					syncId=15;
+					synchronizations[]={9,10,11,12,13,14,0};
+				};
+			};
+		};
+		class Item16
 		{
 			side="WEST";
 			class Vehicles
@@ -43,11 +417,11 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14642.394,17.91,16762.475};
-					id=0;
+					position[]={14880.987,17.91,16688.172};
+					id=16;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
 				};
