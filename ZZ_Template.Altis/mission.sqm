@@ -414,15 +414,45 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=1;
+				items=4;
 				class Item0
 				{
-					position[]={14880.987,17.91,16688.172};
+					position[]={14837.775,17.91,16713.568};
 					id=16;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
+				};
+				class Item1
+				{
+					position[]={14828.234,17.91,16726.881};
+					id=17;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
-					leader=1;
+					skill=0.60000002;
+					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
+				};
+				class Item2
+				{
+					position[]={14836.699,17.91,16726.508};
+					id=18;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
+				};
+				class Item3
+				{
+					position[]={14847.54,17.91,16726.762};
+					id=19;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
 				};
@@ -433,15 +463,45 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=1;
+				items=4;
 				class Item0
 				{
-					position[]={14866.672,17.872644,16673.412};
-					id=17;
+					position[]={14869.121,17.91,16711.516};
+					id=20;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
+				};
+				class Item1
+				{
+					position[]={14858.894,17.91,16727.053};
+					id=21;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
-					leader=1;
+					skill=0.60000002;
+					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
+				};
+				class Item2
+				{
+					position[]={14869.413,17.91,16727.879};
+					id=22;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
+				};
+				class Item3
+				{
+					position[]={14880.081,17.91,16726.932};
+					id=23;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
 				};
