@@ -42,7 +42,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=17;
+		items=18;
 		class Item0
 		{
 			side="LOGIC";
@@ -424,8 +424,38 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
 				};
 			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14866.672,17.872644,16673.412};
+					id=17;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={14824.415,17.91,16702.375};
+			name="respawn_west";
+			type="Empty";
 		};
 	};
 };
