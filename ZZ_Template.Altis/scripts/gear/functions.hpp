@@ -4,6 +4,7 @@ class ZZ_Gear_Functions {
 
 	class Functions {
 		file = "scripts\gear\functions";
+		class actionOpenArsenal{};
 		class addRespawnInventory{};
 	};
 };

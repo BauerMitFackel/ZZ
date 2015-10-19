@@ -2,7 +2,7 @@
 // String (usually mission name) shown during mission loading.
 onLoadName					= "ZZ Template";
 // Displays a message while the mission is loading.
-onLoadMission				= "v0.0.1";
+onLoadMission				= "v0.0.2";
 // Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden.
 onLoadMissionTime			= 0;
 // Define whether you will see the time and date displayed while the intro loads. 1 means visible, 0 hidden.
@@ -17,7 +17,7 @@ author						= "BauerMitFackel and SonneDesVolkes";
 // Respawn type: 0 = NONE, 1 = BIRD, 2 = INSTANT, 3 = BASE, 4 = GROUP, 5 = SIDE.
 respawn						= "BASE";
 // Delay in seconds before playable unit respawns.
-respawnDelay				= 30;
+respawnDelay				= 3;
 // Delay in seconds before vehicle respawns.
 respawnVehicleDelay 		= 0;
 // 0 to disable the score table (it can still be opened manually by pressing 'P' key).
