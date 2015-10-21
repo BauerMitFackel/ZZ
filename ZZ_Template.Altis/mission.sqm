@@ -248,94 +248,6 @@ class Mission
 		};
 		class Item8
 		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-<<<<<<< HEAD
-					position[]={14641.537,17.91,16754.598};
-					id=8;
-=======
-<<<<<<< HEAD
-					position[]={14837.775,17.91,16713.568};
-					id=16;
-=======
-					position[]={14645.648,17.91,16772.068};
-					id=8;
->>>>>>> origin/master
-					side="WEST";
-					vehicle="B_Soldier_SL_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
-				};
-				class Item1
-				{
-					position[]={14828.234,17.91,16726.881};
-					id=17;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAY CDG";
-					skill=0.60000002;
-					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
-				};
-				class Item2
-				{
-					position[]={14836.699,17.91,16726.508};
-					id=18;
->>>>>>> origin/master
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-				};
-			};
-		};
-		class Item9
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-<<<<<<< HEAD
-					position[]={14633.968,17.91,16754.732};
-					id=9;
-=======
-<<<<<<< HEAD
-					position[]={14869.121,17.91,16711.516};
-					id=20;
-=======
-					position[]={14630.885,17.91,16757.984};
-					id=9;
->>>>>>> origin/master
-					side="WEST";
-					vehicle="B_Soldier_SL_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
-				};
-				class Item1
-				{
-					position[]={14858.894,17.91,16727.053};
-					id=21;
->>>>>>> origin/master
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.60000002;
-				};
-			};
-		};
-		class Item10
-		{
 			side="LOGIC";
 			class Vehicles
 			{
@@ -371,7 +283,7 @@ class Mission
 							typeName="UseAsDefault";
 						};
 					};
-					id=10;
+					id=8;
 					side="LOGIC";
 					vehicle="ModuleCuratorSetCamera_F";
 					leader=1;
@@ -380,7 +292,7 @@ class Mission
 				};
 			};
 		};
-		class Item11
+		class Item9
 		{
 			side="LOGIC";
 			class Vehicles
@@ -417,11 +329,105 @@ class Mission
 							typeName="UseAsDefault";
 						};
 					};
-					id=11;
+					id=9;
 					side="LOGIC";
 					vehicle="ModuleCuratorSetCamera_F";
 					leader=1;
 					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={14633.755,17.91,16751.553};
+					azimut=180;
+					id=10;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={14633.755,17.91,16749.553};
+					id=11;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={14632.755,17.91,16749.553};
+					id=12;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={14634.755,17.91,16749.553};
+					id=13;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={14641.552,17.91,16751.512};
+					azimut=180;
+					id=14;
+					side="WEST";
+					vehicle="B_Soldier_SL_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.60000002;
+				};
+				class Item1
+				{
+					position[]={14641.552,17.91,16749.512};
+					id=15;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item2
+				{
+					position[]={14640.552,17.91,16749.512};
+					id=16;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+				};
+				class Item3
+				{
+					position[]={14642.552,17.91,16749.512};
+					id=17;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAY CDG";
 					skill=0.60000002;
 				};
 			};
@@ -433,7 +439,7 @@ class Mission
 		class Item0
 		{
 			position[]={14637.859,17.91,16743.904};
-			id=12;
+			id=18;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
