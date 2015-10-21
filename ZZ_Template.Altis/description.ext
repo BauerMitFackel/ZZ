@@ -2,7 +2,7 @@
 // String (usually mission name) shown during mission loading.
 onLoadName					= "ZZ Template";
 // Displays a message while the mission is loading.
-onLoadMission				= "v0.0.2";
+onLoadMission				= "v0.0.3";
 // Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden.
 onLoadMissionTime			= 0;
 // Define whether you will see the time and date displayed while the intro loads. 1 means visible, 0 hidden.
@@ -17,7 +17,7 @@ author						= "BauerMitFackel and SonneDesVolkes";
 // Respawn type: 0 = NONE, 1 = BIRD, 2 = INSTANT, 3 = BASE, 4 = GROUP, 5 = SIDE.
 respawn						= "BASE";
 // Delay in seconds before playable unit respawns.
-respawnDelay				= 3;
+respawnDelay				= 10;
 // Delay in seconds before vehicle respawns.
 respawnVehicleDelay 		= 0;
 // 0 to disable the score table (it can still be opened manually by pressing 'P' key).
@@ -25,11 +25,14 @@ respawnDialog				= 0;
 // 1 to respawn player when he joins the game. Available only for INSTANT and BASE respawn types.
 respawnOnStart				= 1;
 // Templates are pre-defined scripts called when player dies and respawns. They are defined in an array and can be combined together.
-respawnTemplates[]			= {"Base", "Counter", "MenuPosition", "MenuInventory"};
+// @see: https://community.bistudio.com/wiki/Arma_3_Respawn
+respawnTemplates[]			= {"Revive", "Tickets", "Base", "EndMission", "MenuPosition", "MenuInventory"};
 // Additionally, you can define side specific templates. When a side has no unique templates, it will use general respawnTemplates instead.
 respawnTemplatesVirtual[]	= {}; // Virtual players, used mainly in Curator missions
 // Respawn button in the pause menu.
-respawnButton				= 1;
+respawnButton				= 0;
+// The time it takes to revive an incapacitated unit (default: 6 seconds).
+reviveDelay = 30;
 
 // Sets the mode for corpse removal manager. 0 = None, 1 = All, 2 = None_But_Respawned, 3 = All_But_Respawned.
 corpseManagerMode			= 1;
@@ -51,7 +54,7 @@ enableDebugConsole			= 0;
 // Disable global channel.
 disableChannels[]			= {0};
 // Forces Rotor Lib System: 0 - options based; 1 - force enable; 2 - force disable
-forceRotorLibSimulation		= 0;
+forceRotorLibSimulation		= 1;
 
 
 class Header {
@@ -63,15 +66,35 @@ class Header {
 
 
 class CfgRespawnInventory {
-	#include "scripts\gear\respawn_inventories.hpp"
-};
 
+	class SURVIVOR {
 
-class CfgFunctions {
-	#include "scripts\core\functions.hpp"
-	#include "scripts\gear\functions.hpp"
+		displayName = "Survivor";
+		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\private_gs.paa";
+
+		items[] = {
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit"
+		};
+		
+		linkedItems[] = {
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		
+		uniformClass = "U_C_Poor_1";
+	};
 };
 
 
 class Params {
+	class RespawnTickets {
+		title = "# of respawns";
+		values[] = {50,25,10,1};
+		texts[] = {"Easy (50)", "Medium (25)", "Hard (10)", "Expert (1)"};
+		default = 25;
+	};
 };

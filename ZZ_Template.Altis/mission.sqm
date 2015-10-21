@@ -44,7 +44,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=10;
+		items=12;
 		class Item0
 		{
 			side="LOGIC";
@@ -254,14 +254,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14645.648,17.91,16772.068};
+					position[]={14641.537,17.91,16754.598};
 					id=8;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
 				};
 			};
 		};
@@ -273,14 +272,105 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14630.885,17.91,16757.984};
+					position[]={14633.968,17.91,16754.732};
 					id=9;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="init_Handle = [this] spawn ZZ_CORE_fnc_initUnit;";
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14633.673,17.91,16734.639};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="zeus_1";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="-90";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Pitch";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Commit";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="UseAsDefault";
+						};
+					};
+					id=10;
+					side="LOGIC";
+					vehicle="ModuleCuratorSetCamera_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item11
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14641.21,17.91,16734.463};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="zeus_2";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Curator";
+						};
+						class Item1
+						{
+							value="-90";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Pitch";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="Commit";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCuratorSetCamera_F";
+							typeName="UseAsDefault";
+						};
+					};
+					id=11;
+					side="LOGIC";
+					vehicle="ModuleCuratorSetCamera_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
 				};
 			};
 		};
@@ -290,13 +380,12 @@ class Mission
 		items=1;
 		class Item0
 		{
-			position[]={14638.374,17.91,16764.969};
-			azimut=-45;
-			id=10;
+			position[]={14637.859,17.91,16743.904};
+			id=12;
 			side="EMPTY";
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
-			init="init_Handle = [this] call  ZZ_GEAR_fnc_actionOpenArsenal;";
+			init="this addAction [""<t color='#FF0000'>Arsenal</t>"", {[""Open"", true] spawn BIS_fnc_arsenal}]";
 		};
 	};
 	class Markers
