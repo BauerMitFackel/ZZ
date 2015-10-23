@@ -1,8 +1,8 @@
 
 // String (usually mission name) shown during mission loading.
-onLoadName					= "ZZ Template";
+onLoadName					= "ZZ: Season 1 - Episode 1";
 // Displays a message while the mission is loading.
-onLoadMission				= "v0.0.3";
+onLoadMission				= "v1.0.0";
 // Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden.
 onLoadMissionTime			= 0;
 // Define whether you will see the time and date displayed while the intro loads. 1 means visible, 0 hidden.
@@ -85,7 +85,7 @@ class CfgRespawnInventory {
 			"ItemRadio"
 		};
 		
-		uniformClass = "U_C_Poor_1";
+		uniformClass = "U_B_CombatUniform_mcam_tshirt";
 	};
 };
 
