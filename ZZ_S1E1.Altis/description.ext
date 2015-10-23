@@ -1,0 +1,100 @@
+
+// String (usually mission name) shown during mission loading.
+onLoadName					= "ZZ Template";
+// Displays a message while the mission is loading.
+onLoadMission				= "v0.0.3";
+// Define whether you will see the time and date displayed while the mission loads. 1 means visible, 0 hidden.
+onLoadMissionTime			= 0;
+// Define whether you will see the time and date displayed while the intro loads. 1 means visible, 0 hidden.
+onLoadIntroTime				= 0;
+// You can define a picture to be shown while the mission is loaded. The path is relative to the mission folder.
+// loadScreen					= "SOS\Pictures\SOS.paa";
+// Path to image which will be displayed when the mission is highlighted on the mission selection screen. Image should be .paa format and in 2:1 aspect ratio.
+// overviewPicture				= "SOS\Pictures\SOS.paa";
+// Author of the mission. The default loading screen shows this string below the onLoadName in a smaller font prefixed by "by ".
+author						= "BauerMitFackel and SonneDesVolkes";
+
+// Respawn type: 0 = NONE, 1 = BIRD, 2 = INSTANT, 3 = BASE, 4 = GROUP, 5 = SIDE.
+respawn						= "BASE";
+// Delay in seconds before playable unit respawns.
+respawnDelay				= 10;
+// Delay in seconds before vehicle respawns.
+respawnVehicleDelay 		= 0;
+// 0 to disable the score table (it can still be opened manually by pressing 'P' key).
+respawnDialog				= 0;
+// 1 to respawn player when he joins the game. Available only for INSTANT and BASE respawn types.
+respawnOnStart				= 1;
+// Templates are pre-defined scripts called when player dies and respawns. They are defined in an array and can be combined together.
+// @see: https://community.bistudio.com/wiki/Arma_3_Respawn
+respawnTemplates[]			= {"Revive", "Tickets", "Base", "EndMission", "MenuPosition", "MenuInventory"};
+// Additionally, you can define side specific templates. When a side has no unique templates, it will use general respawnTemplates instead.
+respawnTemplatesVirtual[]	= {}; // Virtual players, used mainly in Curator missions
+// Respawn button in the pause menu.
+respawnButton				= 0;
+// The time it takes to revive an incapacitated unit (default: 6 seconds).
+reviveDelay = 30;
+
+// Sets the mode for corpse removal manager. 0 = None, 1 = All, 2 = None_But_Respawned, 3 = All_But_Respawned.
+corpseManagerMode			= 1;
+// Corpse limit before which ( <= ) corpseRemovalMaxTime applies and after which ( > ) corpseRemovalMinTime applies
+corpseLimit					= 50;
+// Remove all bodies that have been dead longer than corpseRemovalMinTime when corpseLimit is breached.
+corpseRemovalMinTime		= 300; //seconds
+// Maximum time a corpse can remain on the ground if total number of corpses is equal or under corpseLimit.
+corpseRemovalMaxTime		= 600; //seconds
+
+// 1 = removes all playable units which do not have a human player. 0 = logging out player will have AI take control of his character. Default value is 0. (MP)
+disabledAI					= 1;
+// Toggle saving. Default value: 1
+saving						= 0;
+// Disable dropping items while swimming: 0 = Disable, 1 = Enable
+enableItemsDropping			= 0;
+// Allows access to the Debug Console outside of the editor during normal gameplay. 0 = Default behavior, available only in editor, 1 = Available in SP and for hosts / logged in admins, 2 = Available for everyone
+enableDebugConsole			= 0;
+// Disable global channel.
+disableChannels[]			= {0};
+// Forces Rotor Lib System: 0 - options based; 1 - force enable; 2 - force disable
+forceRotorLibSimulation		= 1;
+
+
+class Header {
+	gameType				= ZCoop;	// game type: Zeus - Cooperative Mission
+	minPlayers				= 2;		// min # of players the mission supports
+	maxPlayers				= 10;		// max # of players the mission supports
+	playerCountMultipleOf	= 1;		// OFP:Elite option.
+};
+
+
+class CfgRespawnInventory {
+
+	class SURVIVOR {
+
+		displayName = "Survivor";
+		icon = "\A3\Ui_f\data\GUI\Cfg\Ranks\private_gs.paa";
+
+		items[] = {
+			"FirstAidKit",
+			"FirstAidKit",
+			"FirstAidKit"
+		};
+		
+		linkedItems[] = {
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		
+		uniformClass = "U_C_Poor_1";
+	};
+};
+
+
+class Params {
+	class RespawnTickets {
+		title = "# of respawns";
+		values[] = {50,25,10,1};
+		texts[] = {"Easy (50)", "Medium (25)", "Hard (10)", "Expert (1)"};
+		default = 25;
+	};
+};
